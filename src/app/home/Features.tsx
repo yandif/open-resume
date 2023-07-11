@@ -8,29 +8,29 @@ import { Link } from "components/documentation";
 const FEATURES = [
   {
     src: featureFreeSrc,
-    title: "Free Forever",
-    text: "OpenResume is created with the belief that everyone should have free and easy access to a modern professional resume design",
+    title: "永久免费",
+    text: "OpenResume 的创建初衷是为了让每个人都能免费轻松地获得现代化的专业简历设计。",
   },
   {
     src: featureUSSrc,
-    title: "U.S. Best Practices",
-    text: "OpenResume has built-in best practices for the U.S. job market and works well with top ATS platforms such as Greenhouse and Lever",
+    title: "美国最佳实践",
+    text: "OpenResume 内置了美国最佳求职实践，并与 Greenhouse 和 Lever 等顶级 ATS 平台兼容。",
   },
   {
     src: featurePrivacySrc,
-    title: "Privacy Focus",
-    text: "OpenResume stores data locally in your browser so only you have access to your data and with complete control",
+    title: "隐私保护",
+    text: "OpenResume 将数据存储在本地浏览器中，只有您自己能够访问您的数据，并且具有完全的控制权。",
   },
   {
     src: featureOpenSourceSrc,
-    title: "Open-Source",
+    title: "开源项目",
     text: (
       <>
-        OpenResume is an open-source project, and its source code can be viewed
-        by anyone on its{" "}
+        OpenResume 是一个开源项目，可以在它的{" "}
         <Link href="https://github.com/xitanggg/open-resume">
-          GitHub repository
+          GitHub 代码仓库
         </Link>
+        上被任何人查看。
       </>
     ),
   },

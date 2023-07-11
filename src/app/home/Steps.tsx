@@ -1,13 +1,22 @@
 const STEPS = [
-  { title: "Add a resume pdf", text: "or create from scratch" },
-  { title: "Preview design", text: "and make edits" },
-  { title: "Download new resume", text: "and apply with confidence" },
+  {
+    title: "添加简历PDF",
+    text: "或从零开始创建",
+  },
+  {
+    title: "预览设计",
+    text: "并进行编辑",
+  },
+  {
+    title: "下载新简历",
+    text: "并自信地应用",
+  },
 ];
 
 export const Steps = () => {
   return (
     <section className="mx-auto mt-8 rounded-2xl bg-sky-50 bg-dot px-8 pb-12 pt-10 lg:mt-2">
-      <h1 className="text-center text-3xl font-bold">3 Simple Steps</h1>
+      <h1 className="text-center text-3xl font-bold">简单 3 步</h1>
       <div className="mt-8 flex justify-center">
         <dl className="flex flex-col gap-y-10 lg:flex-row lg:justify-center lg:gap-x-20">
           {STEPS.map(({ title, text }, idx) => (

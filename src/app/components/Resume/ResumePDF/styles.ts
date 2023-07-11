@@ -1,15 +1,17 @@
 import { StyleSheet, Font } from "@react-pdf/renderer";
-import { FONT_FAMILIES } from "public/fonts/fonts";
+import { FONT_FAMILIES, OTF_FONT_FAMILIES } from "public/fonts/fonts";
 
 FONT_FAMILIES.forEach((fontFamily) => {
+  const isOTF = OTF_FONT_FAMILIES.includes(fontFamily);
+  const ext = isOTF ? "otf" : "ttf";
   Font.register({
     family: fontFamily,
     fonts: [
       {
-        src: `fonts/${fontFamily}-Regular.ttf`,
+        src: `fonts/${fontFamily}-Regular.${ext}`,
       },
       {
-        src: `fonts/${fontFamily}-Bold.ttf`,
+        src: `fonts/${fontFamily}-Bold.${ext}`,
         fontWeight: "bold",
       },
     ],

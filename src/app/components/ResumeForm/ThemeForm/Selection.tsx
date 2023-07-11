@@ -94,7 +94,7 @@ export const FontSizeSelections = ({
 
   return (
     <SelectionsWrapper>
-      {["Compact", "Standard", "Large"].map((type, idx) => {
+      {["小", "中", "大"].map((type, idx) => {
         const fontSizePt = String(compactSizePt + idx);
         const isSelected = fontSizePt === selectedFontSize;
         return (
@@ -127,7 +127,7 @@ export const DocumentSizeSelections = ({
 }) => {
   return (
     <SelectionsWrapper>
-      {["Letter", "A4"].map((type, idx) => {
+      {["信纸", "A4纸"].map((type, idx) => {
         return (
           <Selection
             key={idx}
@@ -138,7 +138,7 @@ export const DocumentSizeSelections = ({
             <div className="flex flex-col items-center">
               <div>{type}</div>
               <div className="text-xs">
-                {type === "Letter" ? "(US, Canada)" : "(other countries)"}
+                {type === "信纸" ? "(美国, 加拿大)" : "(其他国家)"}
               </div>
             </div>
           </Selection>

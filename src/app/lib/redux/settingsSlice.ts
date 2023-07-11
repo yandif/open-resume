@@ -37,7 +37,7 @@ export type GeneralSetting = Exclude<
 >;
 
 export const DEFAULT_THEME_COLOR = "#38bdf8"; // sky-400
-export const DEFAULT_FONT_FAMILY = "Roboto";
+export const DEFAULT_FONT_FAMILY = "思源宋体";
 export const DEFAULT_FONT_SIZE = "11"; // text-base https://tailwindcss.com/docs/font-size
 export const DEFAULT_FONT_COLOR = "#171717"; // text-neutral-800
 
@@ -54,13 +54,13 @@ export const initialSettings: Settings = {
     custom: false,
   },
   formToHeading: {
-    workExperiences: "WORK EXPERIENCE",
-    educations: "EDUCATION",
-    projects: "PROJECT",
-    skills: "SKILLS",
-    custom: "CUSTOM SECTION",
+    workExperiences: "工作经历",
+    educations: "教育经历",
+    projects: "项目经历",
+    skills: "技术栈",
+    custom: "自定义",
   },
-  formsOrder: ["workExperiences", "educations", "projects", "skills", "custom"],
+  formsOrder: ["skills", "educations", "workExperiences", "projects", "custom"],
   showBulletPoints: {
     educations: true,
     projects: true,

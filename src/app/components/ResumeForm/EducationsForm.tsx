@@ -21,7 +21,7 @@ export const EducationsForm = () => {
   const showBulletPoints = useAppSelector(selectShowBulletPoints(form));
 
   return (
-    <Form form={form} addButtonText="Add School">
+    <Form form={form} addButtonText="添加">
       {educations.map(({ school, degree, gpa, date, descriptions }, idx) => {
         const handleEducationChange = (
           ...[
@@ -47,10 +47,10 @@ export const EducationsForm = () => {
             showMoveUp={showMoveUp}
             showMoveDown={showMoveDown}
             showDelete={showDelete}
-            deleteButtonTooltipText="Delete school"
+            deleteButtonTooltipText="删除"
           >
             <Input
-              label="School"
+              label="学校"
               labelClassName="col-span-4"
               name="school"
               placeholder="Cornell University"
@@ -58,7 +58,7 @@ export const EducationsForm = () => {
               onChange={handleEducationChange}
             />
             <Input
-              label="Date"
+              label="日期"
               labelClassName="col-span-2"
               name="date"
               placeholder="May 2018"
@@ -66,7 +66,7 @@ export const EducationsForm = () => {
               onChange={handleEducationChange}
             />
             <Input
-              label="Degree & Major"
+              label="学位和专业"
               labelClassName="col-span-4"
               name="degree"
               placeholder="Bachelor of Science in Computer Engineering"
@@ -74,7 +74,7 @@ export const EducationsForm = () => {
               onChange={handleEducationChange}
             />
             <Input
-              label="GPA"
+              label="平均绩点"
               labelClassName="col-span-2"
               name="gpa"
               placeholder="3.81"
@@ -83,7 +83,7 @@ export const EducationsForm = () => {
             />
             <div className="relative col-span-full">
               <BulletListTextarea
-                label="Additional Information (Optional)"
+                label="附加信息（可选）"
                 labelClassName="col-span-full"
                 name="descriptions"
                 placeholder="Free paragraph space to list out additional activities, courses, awards etc"
@@ -91,7 +91,7 @@ export const EducationsForm = () => {
                 onChange={handleEducationChange}
                 showBulletPoints={showBulletPoints}
               />
-              <div className="absolute left-[15.6rem] top-[0.07rem]">
+              <div className="absolute left-[8rem] top-[0.07rem]">
                 <BulletListIconButton
                   showBulletPoints={showBulletPoints}
                   onClick={handleShowBulletPoints}

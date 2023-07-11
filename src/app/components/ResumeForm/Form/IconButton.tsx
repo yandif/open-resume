@@ -15,7 +15,7 @@ export const ShowIconButton = ({
   show: boolean;
   setShow: (show: boolean) => void;
 }) => {
-  const tooltipText = show ? "Hide section" : "Show section";
+  const tooltipText = show ? "隐藏" : "显示";
   const onClick = () => {
     setShow(!show);
   };
@@ -39,7 +39,7 @@ export const MoveIconButton = ({
   size?: "small" | "medium";
   onClick: (type: MoveIconButtonType) => void;
 }) => {
-  const tooltipText = type === "up" ? "Move up" : "Move down";
+  const tooltipText = type === "up" ? "向上" : "向下";
   const sizeClassName = size === "medium" ? "h-6 w-6" : "h-4 w-4";
   const Icon = type === "up" ? ArrowSmallUpIcon : ArrowSmallDownIcon;
 
@@ -78,8 +78,8 @@ export const BulletListIconButton = ({
   showBulletPoints: boolean;
 }) => {
   const tooltipText = showBulletPoints
-    ? "Hide bullet points"
-    : "Show bullet points";
+    ? "隐藏要点"
+    : "显示要点";
 
   return (
     <IconButton

@@ -12,7 +12,7 @@ import { deepClone } from "lib/deep-clone";
 
 // countObjectChar(END_HOME_RESUME) -> ~1800 chars
 const INTERVAL_MS = 50; // 20 Intervals Per Second
-const CHARS_PER_INTERVAL = 10;
+const CHARS_PER_INTERVAL = 5;
 // Auto Typing Time:
 //  10 CHARS_PER_INTERVAL -> ~1800 / (20*10) = 9s (let's go with 9s so it feels fast)
 //  9 CHARS_PER_INTERVAL -> ~1800 / (20*9) = 10s
@@ -69,12 +69,12 @@ export const AutoTypingResume = () => {
             fontSize: "12",
             formToHeading: {
               workExperiences: resume.workExperiences[0].company
-                ? "WORK EXPERIENCE"
+                ? "工作经历"
                 : "",
-              educations: resume.educations[0].school ? "EDUCATION" : "",
-              projects: resume.projects[0].project ? "PROJECT" : "",
-              skills: resume.skills.featuredSkills[0].skill ? "SKILLS" : "",
-              custom: "CUSTOM SECTION",
+              educations: resume.educations[0].school ? "教育经历" : "",
+              projects: resume.projects[0].project ? "项目经历" : "",
+              skills: resume.skills.featuredSkills[0].skill ? "技术栈" : "",
+              custom: "自定义",
             },
           }}
         />

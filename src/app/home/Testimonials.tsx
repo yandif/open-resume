@@ -11,23 +11,23 @@ const TESTIMONIALS = [
   {
     src: testimonialSpiegelSrc,
     quote:
-      "Students often make silly mistakes on their resume by using inconsistent bullet points or font sizes. OpenResume’s auto format feature is a great help to ensure consistent format.",
-    name: "Ms. Spiegel",
-    title: "Educator",
+      "学生们在简历中经常会犯一些愚蠢的错误，比如使用不一致的项目符号或字体大小。OpenResume 的自动格式化功能是一个很好的帮助，可以确保格式一致。",
+    name: "Spiegel",
+    title: "教育工作者",
   },
   {
     src: testimonialSantiSrc,
     quote:
-      "I used OpenResume during my last job search and was invited to interview at top tech companies such as Google and Amazon thanks to its slick yet professional resume design.",
+      "我在上一次找工作时使用了 OpenResume，由于其优美而专业的简历设计，我被邀请去面试了 Google 和 Amazon 等顶尖科技公司。",
     name: "Santi",
-    title: "Software Engineer",
+    title: "软件工程师",
   },
   {
     src: testimonialVivianSrc,
     quote:
-      "Creating a professional resume on OpenResume is so smooth and easy! It saves me so much time and headache to not deal with google doc template.",
+      "在 OpenResume 上创建专业简历非常顺畅和容易！不用再费心去处理 Google 文档模板，这为我节省了很多时间和烦恼。",
     name: "Vivian",
-    title: "College Student",
+    title: "大学生",
   },
 ];
 
@@ -65,7 +65,7 @@ export const Testimonials = ({ children }: { children?: React.ReactNode }) => {
   return (
     <section className="mx-auto -mt-2 px-8 pb-24">
       <h2 className="mb-8 text-center text-3xl font-bold">
-        People{" "}
+        人们{" "}
         <Image src={heartSrc} alt="love" className="-mt-1 inline-block w-7" />{" "}
         OpenResume
       </h2>

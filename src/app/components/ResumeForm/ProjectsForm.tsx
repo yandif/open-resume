@@ -14,7 +14,7 @@ export const ProjectsForm = () => {
   const showDelete = projects.length > 1;
 
   return (
-    <Form form="projects" addButtonText="Add Project">
+    <Form form="projects" addButtonText="添加">
       {projects.map(({ project, date, descriptions }, idx) => {
         const handleProjectChange = (
           ...[

@@ -43,7 +43,7 @@ const Resume = () => {
           setScale={setScale}
           documentSize={settings.documentSize}
           document={document}
-          fileName={resume.profile.name + " - Resume"}
+          fileName={resume.profile.name + " - 简历"}
         />
       </div>
       <ResumeControlBarBorder />

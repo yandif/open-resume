@@ -1,5 +1,5 @@
 "use client";
-import { FONT_FAMILIES } from "public/fonts/fonts";
+import { FONT_FAMILIES, OTF_FONT_FAMILIES } from "public/fonts/fonts";
 import Frame from "react-frame-component";
 import {
   A4_HEIGHT_PX,
@@ -11,17 +11,21 @@ import {
 import dynamic from "next/dynamic";
 
 const IFRAME_INITIAL_CONTENT_FONT_FAMILIES_PRELOAD_LINKS = FONT_FAMILIES.map(
-  (
-    font
-  ) => `<link rel="preload" as="font" href="/fonts/${font}-Regular.ttf" type="font/ttf" crossorigin="anonymous">
-  <link rel="preload" as="font" href="/fonts/${font}-Bold.ttf" type="font/ttf" crossorigin="anonymous">`
+  (font) => {
+    const isOTF = OTF_FONT_FAMILIES.includes(font);
+    const ext = isOTF ? "otf" : "ttf";
+    return `<link rel="preload" as="font" href="/fonts/${font}-Regular.${ext}" type="font/ttf" crossorigin="anonymous">
+    <link rel="preload" as="font" href="/fonts/${font}-Bold.${ext}" type="font/ttf" crossorigin="anonymous">`;
+  }
 ).join("");
 
 const IFRAME_INITIAL_CONTENT_FONT_FAMILIES_FONT_FACE = FONT_FAMILIES.map(
-  (
-    font
-  ) => `@font-face {font-family: "${font}"; src: url("/fonts/${font}-Regular.ttf");}
-  @font-face {font-family: "${font}"; src: url("/fonts/${font}-Bold.ttf"); font-weight: bold;}`
+  (font) => {
+    const isOTF = OTF_FONT_FAMILIES.includes(font);
+    const ext = isOTF ? "otf" : "ttf";
+    return `@font-face {font-family: "${font}"; src: url("/fonts/${font}-Regular.${ext}");}
+    @font-face {font-family: "${font}"; src: url("/fonts/${font}-Bold.${ext}"); font-weight: bold;}`;
+  }
 ).join("");
 
 const IFRAME_INITIAL_CONTENT = `<!DOCTYPE html>

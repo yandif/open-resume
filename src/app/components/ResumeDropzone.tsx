@@ -132,11 +132,11 @@ export const ResumeDropzone = ({
                 !playgroundView && "text-lg font-semibold"
               )}
             >
-              Browse a pdf file or drop it here
+              浏览 PDF 文件或将其拖放到此处
             </p>
             <p className="flex text-sm text-gray-500">
               <LockClosedIcon className="mr-1 mt-1 h-3 w-3 text-gray-400" />
-              File data is used locally and never leaves your browser
+              文件数据仅在本地使用，永远不会离开您的浏览器。
             </p>
           </>
         ) : (
@@ -163,7 +163,7 @@ export const ResumeDropzone = ({
                   playgroundView ? "border" : "bg-primary"
                 )}
               >
-                Browse file
+                浏览文件
                 <input
                   type="file"
                   className="sr-only"
@@ -183,12 +183,12 @@ export const ResumeDropzone = ({
                   className="btn-primary"
                   onClick={onImportClick}
                 >
-                  Import and Continue <span aria-hidden="true">→</span>
+                  导入并继续 <span aria-hidden="true">→</span>
                 </button>
               )}
               <p className={cx(" text-gray-500", !playgroundView && "mt-6")}>
-                Note: {!playgroundView ? "Import" : "Parser"} works best on
-                single column resume
+                注意： {!playgroundView ? "导入" : "解析"}
+                功能最适用于单列简历，并且只支持英文简历😂
               </p>
             </>
           )}
