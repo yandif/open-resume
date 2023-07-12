@@ -1,71 +1,74 @@
 # OpenResume
 
-OpenResume is a powerful open-source resume builder and resume parser.
+OpenResume是一个功能强大的开源简历构建器和简历解析器。
 
-The goal of OpenResume is to provide everyone with free access to a modern professional resume design and enable anyone to apply for jobs with confidence.
+OpenResume的目标是为每个人提供免费访问现代专业简历设计的机会，并使任何人都能自信地申请工作。
 
-Official site: [https://open-resume.com](https://open-resume.com)
+官方网站：[https://open-resume.com](https://open-resume.com)
 
-## ⚒️ Resume Builder
+支持中文简历创建: [https://open-resume.yandif.com](https://open-resume.yandif.com)
+(不支持解析中文简历)
+## ⚒️ 简历构建器
 
-OpenResume's resume builder allows user to create a modern professional resume easily.
+OpenResume的简历构建器使用户可以轻松创建现代专业的简历。
 
-![Resume Builder Demo](https://i.ibb.co/jzcrrt8/resume-builder-demo-optimize.gif)
+![简历构建器演示](https://i.ibb.co/jzcrrt8/resume-builder-demo-optimize.gif)
 
-It has 5 Core Features:
-| <div style="width:285px">**Feature**</div> | **Description** |
-|---|---|
-| **1. Real Time UI Update** | The resume PDF is updated in real time as you enter your resume information, so you can easily see the final output. |
-| **2. Modern Professional Resume Design** | The resume PDF is a modern professional design that adheres to U.S. best practices and is ATS friendly to top ATS platforms such as Greenhouse and Lever. It automatically formats fonts, sizes, margins, bullet points to ensure consistency and avoid human errors. |
-| **3. Privacy Focus** | The app only runs locally on your browser, meaning no sign up is required and no data ever leaves your browser, so it gives you peace of mind on your personal data. (Fun fact: Running only locally means the app still works even if you disconnect the internet.) |
-| **4. Import From Existing Resume PDF** | If you already have an existing resume PDF, you have the option to import it directly, so you can update your resume design to a modern professional design in literally a few seconds. |
-| **5. Successful Track Record** | OpenResume users have landed interviews and offers from top companies, such as Dropbox, Google, Meta to name a few. It has been proven to work and liken by recruiters and hiring managers. |
+它具有以下5个核心功能：
 
-## 🔍 Resume Parser
+| 功能                              | 描述                                                                                                                                                                                                                                 |
+|--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1. 实时界面更新** | 当您输入简历信息时，简历PDF将实时更新，因此您可以轻松查看最终输出。 |
+| **2. 现代专业的简历设计** | 简历PDF采用现代专业设计，符合美国的最佳实践，并且与Greenhouse和Lever等顶级ATS平台兼容。它会自动格式化字体、大小、边距和项目符号，以确保一致性并避免人为错误。 |
+| **3. 注重隐私** | 应用程序仅在您的浏览器上运行，不需要注册，也不会有任何数据离开您的浏览器，因此可以放心处理您的个人数据。（有趣的是：仅在本地运行意味着即使断开互联网，应用程序仍然可以使用。）|
+| **4. 从现有简历PDF导入** | 如果您已经有一份现有的简历PDF，您可以选择直接导入它，以便在几秒钟内将您的简历设计更新为现代专业的设计。 |
+| **5. 成功的经验记录** | OpenResume的用户已经在Dropbox、Google、Meta等顶级公司中成功获得面试机会和工作邀约。它已被证明是有效的，受到招聘人员和招聘经理的青睐。|
 
-OpenResume’s second component is the resume parser. For those who have an existing resume, the resume parser can help test and confirm its ATS readability.
+## 🔍 简历解析器
 
-![Resume Parser Demo](https://i.ibb.co/JvSVwNk/resume-parser-demo-optimize.gif)
+OpenResume的第二个组件是简历解析器。对于已有简历的用户，简历解析器可以帮助测试和确认简历的ATS可读性。
 
-You can learn more about the resume parser algorithm in the ["Resume Parser Algorithm Deep Dive" section](https://open-resume.com/resume-parser).
+![简历解析器演示](https://i.ibb.co/JvSVwNk/resume-parser-demo-optimize.gif)
 
-## 📚 Tech Stack
+您可以在["简历解析器算法深入解析"部分](https://open-resume.com/resume-parser)了解更多关于简历解析器算法的信息。
 
-| <div style="width:140px">**Category**</div> | <div style="width:100px">**Choice**</div> | **Descriptions** |
-|---|---|---|
-| **Language** | [TypeScript](https://github.com/microsoft/TypeScript) | TypeScript is JavaScript with static type checking and helps catch many silly bugs at code time. |
-| **UI Library** | [React](https://github.com/facebook/react) | React’s declarative syntax and component-based architecture make it simple to develop reactive reusable components. |
-| **State Management** | [Redux Toolkit](https://github.com/reduxjs/redux-toolkit) | Redux toolkit reduces the boilerplate to set up and update a central redux store, which is used in managing the complex resume state. |
-| **CSS Framework** | [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | Tailwind speeds up development by providing helpful css utilities and removing the need to context switch between tsx and css files. |
-| **Web Framework** | [NextJS 13](https://github.com/vercel/next.js) | Next.js supports static site generation and helps build efficient React webpages that support SEO. |
-| **PDF Reader** | [PDF.js](https://github.com/mozilla/pdf.js) | PDF.js reads content from PDF files and is used by the resume parser at its first step to read a resume PDF’s content. |
-| **PDF Renderer** | [React-pdf](https://github.com/diegomura/react-pdf) | React-pdf creates PDF files and is used by the resume builder to create a downloadable PDF file. |
+## 📚 技术栈
 
-## 📁 Project Structure
+| 类别                              | 选择                                                                                                | 描述                                                                                                                                                                                                                                 |
+|--------------------------------------|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **语言** | [TypeScript](https://github.com/microsoft/TypeScript) | TypeScript是带有静态类型检查的JavaScript，有助于在代码编写时捕获许多愚蠢的错误。 |
+| **UI库** | [React](https://github.com/facebook/react) | React的声明式语法和基于组件的架构使得开发响应式可重用组件变得简单。 |
+| **状态管理** | [Redux Toolkit](https://github.com/reduxjs/redux-toolkit) | Redux Toolkit减少了设置和更新中央redux存储器的样板代码，用于管理复杂的简历状态。 |
+| **CSS框架** | [Tailwind CSS](https://github.com/tailwindlabs/tailwindcss) | Tailwind通过提供有用的CSS实用程序来加快开发速度，并消除了在tsx和css文件之间切换的需求。 |
+| **Web框架** | [Next.js 13](https://github.com/vercel/next.js) | Next.js支持静态站点生成，并帮助构建支持SEO的高效React网页。 |
+| **PDF阅读器** | [PDF.js](https://github.com/mozilla/pdf.js) | PDF.js从PDF文件中读取内容，并在简历解析器的第一步中用于读取简历PDF的内容。 |
+| **PDF渲染器** | [React-pdf](https://github.com/diegomura/react-pdf) | React-pdf创建PDF文件，并由简历构建器用于创建可下载的PDF文件。 |
 
-OpenResume is created with the NextJS web framework and follows its project structure. The source code can be found in `src/app`. There are a total of 4 page routes as shown in the table below. (Code path is relative to `src/app`)
+## 📁 项目结构
 
-| <div style="width:115px">**Page Route**</div> | **Code Path** | **Description** |
-|---|---|---|
-| / | /page.tsx | Home page that contains hero, auto typing resume, steps, testimonials, logo cloud, etc |
-| /resume-import | /resume-import/page.tsx | Resume import page, where you can choose to import data from an existing resume PDF. The main component used is `ResumeDropzone` (`/components/ResumeDropzone.tsx`) |
-| /resume-builder | /resume-builder/page.tsx | Resume builder page to build and download a resume PDF. The main components used are `ResumeForm` (`/components/ResumeForm`) and `Resume` (`/components/Resume`) |
-| /resume-parser | /resume-parser/page.tsx | Resume parser page to test a resume’s AST readability. The main library util used is `parseResumeFromPdf` (`/lib/parse-resume-from-pdf`) |
+OpenResume使用NextJS Web框架创建，并遵循其项目结构。源代码可以在`src/app`目录中找到。以下是总共4个页面路由的列表和代码路径（代码路径相对于`src/app`）：
 
-## 💻 Local Development
+| 页面路由 | 代码路径 | 描述 |
+|--------|----------|------|
+| / | /page.tsx | 包含主页、自动打字简历、步骤、推荐、标志云等的主页 |
+| /resume-import | /resume-import/page.tsx | 简历导入页面，您可以选择从现有简历PDF导入数据。主要使用的组件是`ResumeDropzone` (`/components/ResumeDropzone.tsx`) |
+| /resume-builder | /resume-builder/page.tsx | 简历构建页面，用于构建和下载简历PDF。主要使用的组件是`ResumeForm` (`/components/ResumeForm`) 和 `Resume` (`/components/Resume`) |
+| /resume-parser | /resume-parser/page.tsx | 简历解析器页面，用于测试简历的AST可读性。主要使用的库工具是`parseResumeFromPdf` (`/lib/parse-resume-from-pdf`) |
 
-### Method 1: npm
+## 💻 本地开发
 
-1. Download the repo `git clone https://github.com/xitanggg/open-resume.git`
-2. Change the directory `cd open-resume`
-3. Install the dependency `npm install`
-4. Start a development server `npm run dev`
-5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see OpenResume live
+### 方法1：使用npm
 
-### Method 2: Docker
+1. 下载仓库 `git clone https://github.com/xitanggg/open-resume.git`
+2. 切换到目录 `cd open-resume`
+3. 安装依赖 `npm install`
+4. 启动开发服务器 `npm run dev`
+5. 在浏览器中打开 [http://localhost:3000](http://localhost:3000) 查看实时的OpenResume页面
 
-1. Download the repo `git clone https://github.com/xitanggg/open-resume.git`
-2. Change the directory `cd open-resume`
-3. Build the container `docker build -t open-resume .`
-4. Start the container `docker run -p 3000:3000 open-resume`
-5. Open your browser and visit [http://localhost:3000](http://localhost:3000) to see OpenResume live
+### 方法2：使用Docker
+
+1. 下载仓库 `git clone https://github.com/xitanggg/open-resume.git`
+2. 切换到目录 `cd open-resume`
+3. 构建容器 `docker build -t open-resume .`
+4. 启动容器 `docker run -p 3000:3000 open-resume`
+5. 在浏览器中打开 [http://localhost:3000](http://localhost:3000) 查看实时的OpenResume页面
