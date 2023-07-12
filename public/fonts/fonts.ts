@@ -27,9 +27,12 @@ export const SERI_FONT_FAMILIES = [
   "Merriweather",
 ] as const;
 
+export const OTF_FONT_FAMILIES = ["思源宋体", "思源黑体"];
+
 export const FONT_FAMILIES = [
-  ...SANS_SERI_FONT_FAMILIES,
-  ...SERI_FONT_FAMILIES,
+  // ...SANS_SERI_FONT_FAMILIES,
+  // ...SERI_FONT_FAMILIES,
+  ...OTF_FONT_FAMILIES,
 ];
 
 export type FontFamily = (typeof FONT_FAMILIES)[number];
@@ -45,4 +48,6 @@ export const FONT_FAMILY_TO_STANDARD_SIZE_IN_PT: Record<FontFamily, number> = {
   RobotoSlab: 10,
   PlayfairDisplay: 10,
   Merriweather: 10,
+  思源宋体: 11,
+  思源黑体: 11,
 };

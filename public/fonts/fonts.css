@@ -9,6 +9,10 @@
 @font-face {font-family: "OpenSans"; src: url("/fonts/OpenSans-Bold.ttf"); font-weight: bold;}
 @font-face {font-family: "Raleway"; src: url("/fonts/Raleway-Regular.ttf");}
 @font-face {font-family: "Raleway"; src: url("/fonts/Raleway-Bold.ttf"); font-weight: bold;}
+@font-face {font-family: "思源宋体"; src: url("/fonts/思源宋体-Regular.otf");}
+@font-face {font-family: "思源宋体"; src: url("/fonts/思源宋体-Bold.otf"); font-weight: bold;}
+@font-face {font-family: "思源黑体"; src: url("/fonts/思源黑体-Regular.otf");}
+@font-face {font-family: "思源黑体"; src: url("/fonts/思源黑体-Bold.otf"); font-weight: bold;}
 
 @font-face {font-family: "RobotoSlab"; src: url("/fonts/RobotoSlab-Regular.ttf");}
 @font-face {font-family: "RobotoSlab"; src: url("/fonts/RobotoSlab-Bold.ttf"); font-weight: bold;}
